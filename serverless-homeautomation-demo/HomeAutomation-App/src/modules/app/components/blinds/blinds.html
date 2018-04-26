@@ -1,0 +1,21 @@
+<h1>Blinds control</h1>
+
+<div class="channel">{{ currentTargetDevice }}</div>
+
+<div class="full">
+  <button (click)="up()" class="trigger">
+    <i class="fa fa-arrow-up fa-2x"></i>
+  </button>
+  <button (click)="down()" class="trigger">
+    <i class="fa fa-arrow-down fa-2x"></i>
+  </button>
+  <button (click)="stop()" class="trigger">
+    <i class="fa fa-stop fa-2x"></i>
+  </button>
+</div>
+
+<div class="status">
+  Current status: {{ currentStatus }}
+</div>
+
+<div class="loader" *ngIf="isChecking">Loading...</div>

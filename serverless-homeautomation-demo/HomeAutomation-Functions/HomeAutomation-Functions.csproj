@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <RootNamespace>HomeAutomationFunctions</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>    
+    <PackageReference Include="IdentityModel" Version="2.12.0" />    
+    <PackageReference Include="Microsoft.Azure.Devices" Version="1.4.1" />    
+    <PackageReference Include="Microsoft.Azure.NotificationHubs" Version="1.0.9" />    
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="2.1.0-beta4" />    
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DocumentDB" Version="1.1.0-beta4" />    
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="1.1.0-beta2" />    
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.EventGrid" Version="1.0.0-beta2" />    
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.NotificationHubs" Version="1.1.0-beta4" />    
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Twilio" Version="1.0.0" />    
+    <PackageReference Include="Microsoft.Azure.WebJobs.ServiceBus" Version="2.1.0-beta4" />    
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="1.1.1" />    
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="2.1.5" />    
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.7" />    
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />    
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.1.5" />    
+    <PackageReference Include="WebPush" Version="1.0.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HomeAutomation-Common\HomeAutomation-Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>

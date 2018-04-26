@@ -1,0 +1,8 @@
+<div class="backdrop"></div>
+<app-header></app-header>
+
+<ng-progress [color]="'white'" [thick]="true" [spinner]="false"></ng-progress>
+
+<div id="main-container" [@routeTransition]="getState(mainOutlet)">
+  <router-outlet #mainOutlet="outlet"></router-outlet>
+</div>

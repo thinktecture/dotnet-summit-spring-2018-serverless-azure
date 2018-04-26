@@ -1,0 +1,30 @@
+﻿{
+  "IsEncrypted": false,
+  "Host": {
+    "CORS": "*"
+  },
+  "Values": {
+    "AzureWebJobsStorage": "", // Connectionstring to Azure Storage container, used for functions
+    "IotHubConnectionString": "", // Connection string to IoT Hub
+    "IdpIntrospectionEndpoint": "", // Url to IdentityServer Introspection Endpoint
+    "IdpIntrospectionEndpointClientId": "", // Client Id for Introspection Endpoint
+    "IdpIntrospectionEndpointClientSecret": "", // Client Secret for Introspection Endpoint
+    "IdpAuthority": "", // IdentityServer authority
+    "NotificationHubConnectionString": "", // Connectionstring to Notification Hub
+    "NotificationHubName": "", // Name of Notification Hub
+    "EventHubConnectionString": "", // Connectionstring to Event Hub
+    "EventHubName": "", // Name of Event Hub
+    "CosmosDbConnectionString": "", // Connectionstring to Cosmos DB
+    "CosmosDbNameDeviceData": "", // Database name of Device Data
+    "CosmosDbCollectionClimateData": "", // Collection name of climate data
+    "CosmosDbNameInfrastructureData": "", // Database name of infrastructure data
+    "CosmosDbCollectionPushSubscriptions": "", // Collection name of push subscritptions
+    "CosmosDbDeleteSubscriptionSprocName": "", // Stored procedure name of delete subscription
+    "TwilioAccountSid": "", // Twilio account ID
+    "TwilioAuthToken": "", // Twilio authentication token
+    "TwilioFromNumber": "", // Twilio sender number
+    "EventGridSasToken": "", // Shared access signature for event grid
+    "EventGridEventsEndpoint": "" // Eventgrid events endpoint
+
+  }
+}

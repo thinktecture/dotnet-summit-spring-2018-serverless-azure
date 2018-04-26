@@ -1,0 +1,8 @@
+<h1>Building information</h1>
+
+<div *ngFor="let room of buildingInfo">
+  <div class="tree-node">{{ room.name }}</div>
+  <div *ngFor="let device of room.devices">
+    <div class="tree-node-leaf">{{ device.name }}</div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+@import '../../../../../styles/_variables.scss';
+
+.padded {
+  padding-bottom: 50px;
+}
+
+.control-input {
+  font-size: large;
+  outline: 5px;
+  background-color: $primary-color;
+  color: white;
+}
+
+button:focus {
+  outline:0;
+}
+
+.trigger {
+  background: radial-gradient(circle at center, white 0, white 50%, #F9F8F6 60%);
+
+  height: 50px;
+  width: 50px;
+
+  border: 2px solid $primary-color;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0, .12);
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px auto;
+}
+
+.full {
+  display: flex;
+  flex: 0 0 100%;
+}

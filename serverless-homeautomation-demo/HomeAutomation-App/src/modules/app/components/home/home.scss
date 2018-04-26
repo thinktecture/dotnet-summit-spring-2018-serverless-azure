@@ -1,0 +1,21 @@
+@import '../../../../styles/_utilities';
+
+:host {
+  padding-bottom: $menu-height + 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  height: 80%;
+  width: 100%;
+}
+
+.logo {
+  width: 90%;
+  max-width: 400px;
+}

@@ -1,0 +1,21 @@
+@import '../../../../styles/_variables.scss';
+
+.padded {
+  padding-bottom: 30px;
+}
+
+.control-input {
+  font-size: large;
+  outline: 5px;
+  background-color: $primary-color;
+  color: white;
+}
+
+button:focus {
+  outline:0;
+}
+
+.full {
+  display: flex;
+  flex: 0 0 100%;
+}

@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HomeAutomationSimulator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="IotHubConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HostName=tt-homeautomation-iothub.azure-devices.net;DeviceId=hub-weyer-1;SharedAccessKey=Q84IfO+VxR/HYv50MiJ7BE0o/2ul88m120facuaBoks=</Value>
+    </Setting>
+    <Setting Name="HubDeviceId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">hub-weyer-1</Value>
+    </Setting>
+    <Setting Name="MaxTimeToFinish" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

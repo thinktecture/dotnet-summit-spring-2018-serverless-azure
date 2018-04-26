@@ -1,0 +1,18 @@
+<h1>Climate data</h1>
+
+<div class="padded">
+  <select class="control-input" [(ngModel)]="deviceId" name="first">
+    <option *ngFor="let d of deviceIDs">
+      {{d}}
+    </option>
+  </select>
+</div>
+
+<div class="full">
+  <button (click)="start()" class="trigger">
+    <i class="fa fa-play fa-2x"></i>
+  </button>
+  <button (click)="stop()" class="trigger">
+    <i class="fa fa-stop fa-2x"></i>
+  </button>
+</div>

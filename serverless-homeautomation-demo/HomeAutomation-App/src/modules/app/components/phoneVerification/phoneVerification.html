@@ -1,0 +1,25 @@
+<h1>Phone verification</h1>
+
+<div class="padded">
+  <label for="phoneNumber">Your phone number:</label>
+  <input id="phoneNumber" class="control-input" type="text" [(ngModel)]="phoneNumber">
+</div>
+
+<button (click)="startPhoneNumberVerification()" class="control-input">
+  Send
+</button>
+
+<div class="padded" *ngIf="numberSent">
+  <div class="padded">
+    <label for="smsChallengeCode">Code you received via SMS:</label>
+    <input id="smsChallengeCode" class="control-input" type="text" [(ngModel)]="smsChallengeCode">
+  </div>
+
+  <button (click)="sendCode()" class="control-input">
+    Send
+  </button>
+</div>
+
+<div class="padded" *ngIf="result">
+  <i class="fa fa-check fa-4x"></i>
+</div>

@@ -1,0 +1,16 @@
+<h1>Climate history</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th style="width: 50%">Temperature</th>
+      <th style="width: 50%">Humidity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of climateData">
+      <td>{{ data.temperature }}° C</td>
+      <td>{{ data.humidity }} %</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,15 @@
+@import '../../../../styles/_variables';
+
+.tree-node {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.tree-node-leaf {
+  font-size: 20px;
+  color: white;
+  background: $primary-color;
+  margin-bottom: 15px;
+  padding: 10px;
+}
